@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <title>Fayl Açıcısı</title>
+    <script>
+        function openFile() {
+            var input = document.getElementById("fileInput").value;
+            if (input) {
+                window.location.href = input + ".html";
+            } else {
+                alert("Zəhmət olmasa bir dəyər daxil edin.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <div style="text-align: center; margin-top: 50px;">
+        <h1>Fayl Açıcısı</h1>
+        <input type="text" id="fileInput" placeholder="Fayl adını daxil edin">
+        <button onclick="openFile()">Aç</button>
+    </div>
+</body>
+</html>
